@@ -1,11 +1,10 @@
 import requests
 import _tkinter 
 
-#pip install tkinter
 import tkinter as tk 
 from tkinter import *
 import tkinter.messagebox 
-#GUI
+#GUI-------------------------------------------------------------------------------------------------------
 root = tk.Tk()
 
 root.title("Taha Polat Döviz Kuru Çeviricisi")
@@ -22,7 +21,8 @@ variable2 = tk.StringVar(root)
 
 variable1.set("Para Birimi")
 variable2.set("Para Birimi")
-#Function To For Real Time Currency Conversion
+
+#Gerçek Zamanlı Kur Hesaplayıcı Program Fonksiyonu----------------------------------------------------------
 
 def RealTimeCurrencyConversion():
 	from forex_python.converter import CurrencyRates
