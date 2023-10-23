@@ -4,6 +4,7 @@ import _tkinter
 import tkinter as tk 
 from tkinter import *
 import tkinter.messagebox 
+from forex_python.converter import CurrencyRates
 #GUI-------------------------------------------------------------------------------------------------------
 root = tk.Tk()
 
@@ -25,7 +26,6 @@ variable2.set("Para Birimi")
 #Gerçek Zamanlı Kur Hesaplayıcı Program Fonksiyonu----------------------------------------------------------
 
 def RealTimeCurrencyConversion():
-	from forex_python.converter import CurrencyRates
 	c = CurrencyRates()
 
 	from_currency = variable1.get()
@@ -100,4 +100,3 @@ Label_9.grid(row=10, column=0)
 
 
 root.mainloop()
-
